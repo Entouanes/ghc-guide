@@ -1,0 +1,59 @@
+site_name: GitHub Copilot - A Comprehensive Guide
+theme:
+  name: material
+  logo: assets/logo.png
+  palette:
+    scheme: default
+    primary: white
+    accent: black
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.path
+    - navigation.footer
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Entouanes/ghc-guide
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  
+nav:
+  - Welcome: index.md
+  - Getting Started:
+      - How to setup: getting-started/how-to-use.md
+      - Copilot plans: getting-started/copilot-plans.md
+  - Copilot in VSCode:
+      - Introduction: ghc-vscode/intro.md
+      - Models: ghc-vscode/models.md
+      - Code Completion: ghc-vscode/code-completion.md
+      - Ask Mode: ghc-vscode/ask-mode.md
+      - Agent Mode: ghc-vscode/agent-mode.md
+      - Edit Mode: ghc-vscode/edit-mode.md
+  - GitHub Copilot Web:
+      - Introduction: ghc-web/intro.md
+      - Copilot Chat: ghc-web/copilot-chat.md
+      - Code Reviews: ghc-web/code-reviews.md
+      - Copilot Agents for Issues: ghc-web/copilot-agents-issues.md
+  - Preview and Advanced Features:
+      - Customizing Copilot: preview-advanced-topics/customizing-copilot.md
+      - GitHub Copilot Spaces: preview-advanced-topics/spaces.md
+      - Extend with MCP: preview-advanced-topics/mcp.md
+  - Workshops:
+      - API development: workshops/api-development.md
+      - Frontend + UI: workshops/frontend-ui.md
+      - Containerization: workshops/containerization.md
+      - Deployment: workshops/deployment.md
+  - Resources:
+      - Official Documentation: resources/official-documentation.md
+      - Community Forums: resources/community-forums.md
+      - Additional Reading: resources/additional-reading.md
